@@ -1,4 +1,4 @@
-# GrabCoinClub contract [![Hardhat][hardhat-badge]][hardhat]
+# GrabCoinClub contract
 
 - [Hardhat](https://github.com/nomiclabs/hardhat): compile, run and test smart contracts
 - [TypeChain](https://github.com/ethereum-ts/TypeChain): generate TypeScript bindings for smart contracts
@@ -31,18 +31,6 @@ This template comes with sensible default configurations in the following files:
 ├── .solhint.json
 └── hardhat.config.ts
 ```
-
-### GitHub Actions
-
-This template comes with GitHub Actions pre-configured. Your contracts will be linted and tested on every push and pull
-request made to the `main` branch.
-
-Note though that to make this work, you must use your `INFURA_API_KEY` and your `PRIVATE_KEY` as GitHub secrets.
-
-For more information on how to set up GitHub secrets, check out the
-[docs](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions).
-
-You can edit the CI script in [.github/workflows/ci.yml](./.github/workflows/ci.yml).
 
 ## Usage
 
