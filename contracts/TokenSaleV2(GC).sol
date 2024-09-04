@@ -197,8 +197,10 @@ contract TokenSaleV2 is
 
         staker.amount = amount;
         staker.rewardRate = rate;
-        if (!isReinvest) staker.lockingDays = lockingDays;
-        staker.stakedAt = uint48(block.timestamp);
+        if (!isReinvest) {
+            staker.lockingDays = lockingDays;
+            staker.stakedAt = uint48(block.timestamp);
+        }
 
         emit Staked(account, staker.amount, staker.rewardRate);
     }
